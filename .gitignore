@@ -1,0 +1,7 @@
+reports
+.vscode
+.pytest_cache
+.nvm
+reports
+screenshots
+selenium_env
