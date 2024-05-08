@@ -1,8 +1,13 @@
 
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
-from utils.screenshot import Screenshot
+# from ..utils.screenshot import Screenshot
 
 class BaseAction:
     _driver=None
@@ -11,4 +16,4 @@ class BaseAction:
     def __init__(self, driver:webdriver,waitTime:float):
         self._driver=driver
         self._webDriverWait: WebDriverWait = WebDriverWait(driver,timeout=waitTime)
-        self._screenshot=Screenshot(self._driver, './reports/screenshots')
+        # self._screenshot=Screenshot(self._driver, './reports/screenshots')

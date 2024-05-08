@@ -1,3 +1,8 @@
+import os
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
@@ -5,8 +10,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 
-from utils.enums import Browsers
-from utils.types import WebDriver, WebDriverOptions
+from ..enums import Browsers
+from ..types import WebDriver, WebDriverOptions
 
 
 # from enum import Enum

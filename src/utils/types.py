@@ -1,3 +1,9 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+print(sys.path)
+
 from typing import Callable, List,TypeAlias
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
 from selenium.webdriver.firefox.webdriver import WebDriver as FirefoxDriver
